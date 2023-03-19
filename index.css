@@ -1,0 +1,144 @@
+*{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+font-family: 'roboto',sans-serif;
+text-decoration: none;
+}
+a.p{
+    text-decoration: none;
+}
+body{
+display: inline-block;
+width:100%;
+background-color: bisque;
+background-size: cover;
+font-family:'poppins',sans-serif;
+}
+header{
+    height: 100px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRResXiEnntqEya8z8uiNJnnuVlhUoal_XfzA&usqp=CAU);
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+}
+.logo{
+width: 30%;
+float: left;
+line-height: 100px;
+}
+.logo a {
+    text-decoration: none;
+    text-decoration:none;
+    font-size: 30px;
+    font-family: poppins;
+    color: #fff;
+    letter-spacing:5PX;
+}
+nav{
+    float: right;
+    line-height: 100px;
+}
+nav a {
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+}
+.baniere{
+width: 100px;
+height: 600px;
+position:fixed;
+top: 100px; 
+background-image:url(https://img.freepik.com/vecteurs-premium/fond-jour-afrique-dessine-main_23-2149348213.jpg);
+-webkit-background-size:cover;
+background-size: cover;
+background-position: center center;
+}
+.baniere h2 {
+padding-top: 8%;
+font-size: 70px;
+font-family: poppins;
+text-transform: uppercase;
+color: white;
+text-align: center;
+}
+.baniere h3 {
+    color: #fff;
+    text-align: center;
+}
+.pyramide{
+margin: left 50%;;
+}
+.esmt{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(100px);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0,25);
+    transition: 1s;
+}
+.esmt:hover{
+    transform:translateX(50%) ;
+}
+.esmt.imgbox{
+position: relative;
+width: 100%;
+height: 100%;
+z-index: 1;
+transform-origin: left;
+transform-style:preserve-3d;
+transition: 1s;
+}
+.esmt:hover.imgbox{
+transform:rotateY(-180deg);
+}
+.esmt.imgbox img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;   
+transform-style: preserve-3d;
+transition: 1s;
+}
+.esmt.details{
+    position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.esmt.details.content{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.esmt.details.content h2 {
+text-align:left;
+font-weight:700;
+line-height: 1em;
+}
+.esmt.details.content P {
+color: black;
+font-size: small;
+}
+.esmt{
+position: relative;
+width: 300px;
+height: 400px;
+background: #fff;
+transform-style: preserve-3d;
+transform: perspective(1000PX);
+box-shadow: 10px 20px 40px rgba(0, 0, 0, 0,25);
+transition: 1s;
+}
